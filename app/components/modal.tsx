@@ -31,7 +31,7 @@ const Modal: React.FC<ModalProps> = ({ createTodo }) => {
     createTodo(username, title, date);
     setTimeout(() => {
       window.location.reload();
-    }, 500);
+    }, 1000);
   };
   return (
     <Fragment>

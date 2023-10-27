@@ -21,7 +21,7 @@ const ConfettiButton: React.FC<ConfettiButtonProp> = ({
       });
     setTimeout(() => {
       window.location.reload();
-    }, 500);
+    }, 1000);
   };
 
   return (
