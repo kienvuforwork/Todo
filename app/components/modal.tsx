@@ -21,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({ createTodo }) => {
   const closeModal = () => {
     setIsOpen(false);
   };
-  const onSubmit = (e) => {
+  const onSubmit = (e: Event) => {
     e.preventDefault();
     if (date === "" && date === "") {
       toast.error("You should provide both title and date!");

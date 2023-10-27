@@ -1,6 +1,5 @@
 import Accordion from "@/app/components/accordion";
 import prisma from "@/server/db";
-import { headers } from "next/headers";
 import Modal from "@/app/components/modal";
 async function Delete(id: string) {
   "use server";
