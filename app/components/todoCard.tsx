@@ -26,7 +26,7 @@ const TodoCard: React.FC<TodoCardProps> = ({
     toast.success("You deleted a task!");
     setTimeout(() => {
       window.location.reload();
-    }, 100);
+    }, 1000);
   };
   return (
     isOpen && (
