@@ -1,6 +1,7 @@
 "use client";
 
 import ConfettiButton from "./conffetiButton";
+import toast from "react-hot-toast";
 interface TodoCardProps {
   title: string;
   date: string;
@@ -22,9 +23,10 @@ const TodoCard: React.FC<TodoCardProps> = ({
 }) => {
   const onDelete = (id: string) => {
     deleteItem(id);
+    toast.success("You deleted a task!");
     setTimeout(() => {
       window.location.reload();
-    }, 500);
+    }, 100);
   };
   return (
     isOpen && (

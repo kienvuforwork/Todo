@@ -29,6 +29,7 @@ const Modal: React.FC<ModalProps> = ({ createTodo }) => {
     }
 
     createTodo(username, title, date);
+    toast.success("You created a todo!");
     setTimeout(() => {
       window.location.reload();
     }, 1000);

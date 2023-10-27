@@ -1,7 +1,7 @@
 "use client";
 
 import confetti from "canvas-confetti";
-
+import toast from "react-hot-toast";
 interface ConfettiButtonProp {
   onClick: () => void;
   complete: boolean;
@@ -19,6 +19,7 @@ const ConfettiButton: React.FC<ConfettiButtonProp> = ({
         spread: 70,
         origin: { y: 0.6 },
       });
+    toast.success("You completed a task!");
     setTimeout(() => {
       window.location.reload();
     }, 1000);
