@@ -3,7 +3,7 @@ import { useParams } from "next/navigation";
 import { Fragment } from "react";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
-
+import { FormEvent } from "react";
 interface ModalProps {
   createTodo: (username: string, title: string, expectedDate: string) => void;
 }
@@ -21,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({ createTodo }) => {
   const closeModal = () => {
     setIsOpen(false);
   };
-  const onSubmit = (e: Event) => {
+  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (date === "" && date === "") {
       toast.error("You should provide both title and date!");
