@@ -37,7 +37,7 @@ async function AddTodo(username: string, title: string, expectedDate: string) {
 const Home = () => {
   return (
     <div className="flex items-center justify-center px-[5rem] md:px-[15rem] xl:px-[28rem] flex-col pt-4">
-      <div className="text-xl font-bold m-4"> Hello! Let's see what to do!</div>
+      <div className="text-xl font-bold m-4"> Hello! Lets see what to do!</div>
       <Modal createTodo={AddTodo}></Modal>
       <Accordion deleteItem={Delete} complete={UpdateItem}></Accordion>
     </div>
